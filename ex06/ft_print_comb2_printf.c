@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include <stdio.h>
 
 void ft_print_comb2(void);
@@ -40,6 +39,22 @@ void	print_number(int first_number, int second_number)
 	}
 	else
 	{
-		printf("%d %d, ", first_number, second_number);
+		if(first_number < 10)
+		{
+			printf("0%d ", first_number);
+		}
+		else
+		{
+			printf("%d ", first_number);
+		}
+
+		if(second_number < 10)
+		{
+			printf("0%d, ", second_number);
+		}
+		else
+		{
+			printf("%d, ", second_number);
+		}
 	}
 }
